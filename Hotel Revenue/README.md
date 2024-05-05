@@ -2,7 +2,7 @@
 
 ## 1- Introduction
 
-Welcome to my data analysis project for the hotel industry! In this project, we'll explore how I use data to inform key decisions in hotel management. from evaluating annual performance to projecting the viability of new expansion projects. But before diving into the details, let me take you through this data story.
+Welcome to my data analysis project for the hotel industry. In this project, we'll explore how I use data to inform key decisions in hotel management. from evaluating annual performance to projecting the viability of new expansion projects. But before diving into the details, let me take you through this data story.
 
 As Hotels & Hotels Data Analyst, I am asked to present compelling analytical results to stakeholders in order to make data-driven decisions about the actual situation of the company and the viability of expanding the parking spaces. 
 
