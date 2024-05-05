@@ -1,6 +1,5 @@
--- create a join table
+-- create a join table for data inspection
 select * from Absenteeism_at_work$ as absw
-left join compensation$ comp on absw.ID = comp.ID
 left join Reasons$ as rs on absw.[Reason for absence] = rs.Number;
 
 -- check the top 100 healtiests workers for the bonus
@@ -8,13 +7,7 @@ select top 100 * from Absenteeism_at_work$
 where [Social drinker] = 0 and [Social smoker] = 0 and [Body mass index] <= 24.9 and [Absenteeism time in hours] <= (select avg ([Absenteeism time in hours]) from Absenteeism_at_work$)
 order by [Social drinker], [Social smoker], [Body mass index], [Absenteeism time in hours];
 
---- check for non-smokers employees for compensation rate increase // compensation rate = $983.221 i.e. $0.68 per hour
-select COUNT(*) as nonsmokers from Absenteeism_at_work$
-where [Social smoker] = 0
-
-select distinct(Seasons) from Absenteeism_at_work$
-
---- Final Query for Data Visualization
+--- create query for Data Visualization
 select 
 absw.ID,
 rs.Reason,
@@ -38,5 +31,4 @@ case when [Body mass index] <18.5 then 'Underweight'
 [Work load Average/day ],
 [Disciplinary failure]
 from Absenteeism_at_work$ as absw
-left join compensation$ comp on absw.ID = comp.ID
 left join Reasons$ as rs on absw.[Reason for absence] = rs.Number;
