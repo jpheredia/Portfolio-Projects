@@ -6,7 +6,7 @@ Welcome to my portfolio project on employee turnover. Employee turnover can have
 In this project we conduct an in-depth turnover analysis for a model company, by using real data and exploring various demographic and employment-related factors, the project aims to provide insights into the turnover phenomenon and its potential implications for the organization.
 
 ## 2-Data
-The dataset contains information about 1470 employees, this includes demographic details, job-related factors, and turnover status, such as age, education, job satisfaction, performance rating, and years with the current manager, among others.
+The dataset contains information about 1470 employees, this includes demographic details, job-related factors, such as age, education, job satisfaction, performance rating, and years with the current manager, turnover status among others.
 
 ## 3-Objectives
 
